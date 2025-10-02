@@ -1,14 +1,7 @@
-Nombres: sdqww
-apellidos: DFGgfD
-edadGFDGFanos
-Estarura: DGFDGF
-Telefonos: GDFGD
-
-
-Nombres: Fermin isaias
+Nombres: Fermin Isaias
 apellidos: Palacios Quiterio
-edad20anos
-Estarura: 189
-Telefonos: 98177272727
+edad21anos
+Estarura: 170
+Telefonos: 9613520367
 
 
