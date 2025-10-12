@@ -95,6 +95,7 @@ def es_texto_valido(valor):
 ventana = tk.Tk()
 ventana.geometry("520x580")
 ventana.title("formulario vr.01")
+ventana.configure(bg="#787871")
 #crear variable para el radio buttom
 var_genero = tk.IntVar()
 #creacion de etiquetas y campos de entrada
@@ -125,10 +126,11 @@ rbHombre.pack()
 rbMujer=tk.Radiobutton(ventana, text="Mujer", variable=var_genero, value=2)
 rbMujer.pack()
 ##cracion de botones
-btnBorrar=tk.Button(ventana, text="borrar valores", command=borrar_fun)
-btnBorrar.pack()
-btnGuardar= tk.Button(ventana, text="Guardar", command=guardar_valores)
+btnGuardar= tk.Button(ventana, text="Guardar", command=guardar_valores, bg="#93C8CF")
 btnGuardar.pack()
+btnBorrar=tk.Button(ventana, text="borrar valores", command=borrar_fun, bg="#CF9393")
+btnBorrar.pack()
+
 
 ventana.mainloop()
 
