@@ -14,7 +14,7 @@ def insertarRegistro (nombre, apellido, edad, telefono, estatura, genero):
             port= "3306"
             )
         cursor= conexion.cursor()
-        StringQuery = "INSERT INTO usuario (Nombre, Apellidos, Edad, Estatura, Telefono, Genero) VALUES (%s, %s, %s, %s, %s, %s)"
+        StringQuery = "INSERT INTO usuario (Nombre, Apellido, Edad, Estatura, Telefono, Genero) VALUES (%s, %s, %s, %s, %s, %s)"
         valores= nombre, apellido, edad, telefono, estatura, genero
         cursor.execute(StringQuery, valores)
         conexion.commit()

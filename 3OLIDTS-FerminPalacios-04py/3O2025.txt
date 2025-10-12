@@ -19,3 +19,10 @@ Estarura: 180
 Telefonos: 9613520367
 
 
+Nombres: Marco Edgar
+apellidos: Vazquez Caballero
+edad19anos
+Estarura: 169
+Telefonos: 9614438891
+
+
