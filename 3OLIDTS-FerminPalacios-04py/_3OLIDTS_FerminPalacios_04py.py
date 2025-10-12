@@ -10,11 +10,11 @@ def insertarRegistro (nombre, apellido, edad, telefono, estatura, genero):
             host= "localhost",
             user= "root",
             password="",
-            database="programacionavanzada",
+            database="registros",
             port= "3306"
             )
         cursor= conexion.cursor()
-        StringQuery = "INSERT INTO registros (Nombre, Apellidos, Edad, Estatura, Telefono, Genero) VALUES (%s, %s, %s, %s, %s, %s)"
+        StringQuery = "INSERT INTO usuario (Nombre, Apellidos, Edad, Estatura, Telefono, Genero) VALUES (%s, %s, %s, %s, %s, %s)"
         valores= nombre, apellido, edad, telefono, estatura, genero
         cursor.execute(StringQuery, valores)
         conexion.commit()
