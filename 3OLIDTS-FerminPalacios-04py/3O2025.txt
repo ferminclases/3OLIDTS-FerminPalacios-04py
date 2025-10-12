@@ -5,3 +5,17 @@ Estarura: 170
 Telefonos: 9613520367
 
 
+Nombres: edgar
+apellidos: perez
+edad19anos
+Estarura: 1.70
+Telefonos: 9611246374
+
+
+Nombres: Fermin
+apellidos: isaias
+edad21anos
+Estarura: 180
+Telefonos: 9613520367
+
+

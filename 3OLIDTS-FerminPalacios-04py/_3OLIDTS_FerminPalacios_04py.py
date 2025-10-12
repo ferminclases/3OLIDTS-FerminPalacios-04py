@@ -1,6 +1,29 @@
 ﻿import tkinter as tk
 from tkinter import messagebox
+import mysql.connector
 import re
+
+
+def insertarRegistro (nombre, apellido, edad, telefono, estatura, genero):
+    try:
+        conexion = mysql.connector.Connect(
+            host= "localhost",
+            user= "root",
+            password="",
+            database="programacionavanzada",
+            port= "3306"
+            )
+        cursor= conexion.cursor()
+        StringQuery = "INSERT INTO registros (Nombre, Apellidos, Edad, Estatura, Telefono, Genero) VALUES (%s, %s, %s, %s, %s, %s)"
+        valores= nombre, apellido, edad, telefono, estatura, genero
+        cursor.execute(StringQuery, valores)
+        conexion.commit()
+        cursor.close()
+        conexion.close()
+        messagebox.showinfo("insercion correcta", "datos guardados con exito")
+    except mysql.connector.Error as err:
+        messagebox.showerror("Error en la conexion", f"Error al insertar datos: {err}")
+    
 
 def limpiar_campos():
     tbNombre.delete(0,tk.END)
@@ -31,6 +54,8 @@ def guardar_valores():
     if (es_entero_valido(edad) and es_decimal_valido(estatura)and es_entero_valido_de_10_digitos(telefono)
         and es_texto_valido(nombres) and es_texto_valido(apellidos)):
 
+        ##insertar registros a la base de datos.
+        insertarRegistro(nombres,apellidos,edad,estatura,telefono,genero)
 
         ###genera la cadena de caracteres
         datos= ("Nombres: "+ nombres + "\n" + "apellidos: " + apellidos + "\n"+"edad"+ edad + "anos\n" + "Estarura: " 
