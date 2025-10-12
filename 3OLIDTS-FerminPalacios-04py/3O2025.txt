@@ -1,28 +1,21 @@
-Nombres: Fermin Isaias
-apellidos: Palacios Quiterio
-edad21anos
-Estarura: 170
-Telefonos: 9613520367
-
-
-Nombres: edgar
-apellidos: perez
-edad19anos
-Estarura: 1.70
-Telefonos: 9611246374
-
-
-Nombres: Fermin
-apellidos: isaias
-edad21anos
-Estarura: 180
-Telefonos: 9613520367
-
-
 Nombres: Marco Edgar
 apellidos: Vazquez Caballero
 edad19anos
 Estarura: 169
-Telefonos: 9614438891
+Telefonos: 9614489001
+
+
+Nombres: Isaias 
+apellidos: Friedman Gomez
+edad20anos
+Estarura: 170
+Telefonos: 9781234567
+
+
+Nombres: Morgan
+apellidos: Gomez Sanchez
+edad23anos
+Estarura: 180
+Telefonos: 9612345677
 
 
